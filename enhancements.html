@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Enhancements</title>
+	
+	<meta charset="utf-8"/>
+	<meta name="author" content="Gabriel Kong Qi Hao"/>
+	<meta name="description" content=""/>
+	<meta name="Keyword" content=""/>
+	<script src="script/enhancement.js"></script>
+	<link rel="stylesheet" type="text/css" href="style/style.css"/>
+</head>
+<header>
+			<div class="logo">
+			<p><img src="images/logo.png" alt="Logo"/></p>
+			</div>
+
+		<!--menu-->
+		<nav id="menu">
+			<label  for="burger">&#9776;</label>
+			<input type="checkbox" id="burger"/>
+			<div id="nav1">
+			<ul>
+				<li class="menuli"><a href="index.html">Home</a></li>
+				<li class="menuli"><a onclick="dropdownMenu()" class="dropbtn" >Product</a>
+				 <ul id="myDropdown" class="dropdown-menu">
+						<li><a href="city.html">City</a></li>
+						<li><a href="jungle.html">Forest</a></li>
+						<li><a href="sea.html">Sea</a></li>
+						<li><a href="homestay.html">Homestay</a></li>
+				</ul>
+				</li>
+				<li class="menuli"><a href="Enquiry.html" onclick="noroom()">Booking</a></li>
+				<li class="menuli"><a href="about.html">About us</a></li>
+				<li class="menuli"><a href="Feedback.html">Feedback</a></li>
+			</ul>
+		</div></nav>
+</header>
+<article id="enhancements">
+	<h1>CSS enhancements</h1>
+		<h2><a href="Enquiry.html">Multiple Steps form</a></h2>
+		<img src="images/form.png" alt="Multiple Steps form"/>
+		<p>The form is split in to several step after the user done filling the first form then they can press the
+		next button to move to the next from.to do it, first the form is given a same class and the showTab(n)function
+		to decide which form should be show out. After that the nextPrev(n) is used to let the user go to the next form.
+		Lastly when the user goes into the last form the next button will become a submit the button. </p>
+		
+		<h2><a href="index.html">Auto change Slide show</a></h2>
+		<img src="images/slide.png" alt="Auto change Slide show"/>
+		<p>Firstly, using a for loop to let the images display into none one by one. Second when the slideIndex is
+		large then the length of the slide slideIndex will equal 1 then the images will be display in block. lastly
+		the using the setTimeout function to change images every 3 seconds</p>
+		
+		<h2><a href="index.html">Search bar</a></h2>
+		<img src="images/search.png" alt="Search bar"/>
+		<p>This enhancement includes 2 function. First openSearch()  function is used to let the searcher bar display in 
+		full screen. Second function filter(), it converts all the user input upper case after that use the input to find
+		out the most simile word and show it out on the screen as above. </p>
+		
+		<h2><a href="index.html">Back to top button</a></h2>
+		<img src="images/bttop.png" alt="Back to top button"/>
+		<p>This enhancement will bring the user back to the top of the page after they press this this 
+		is because scrollTop is set as 0 in the function. </p>
+		
+		<h2><a href="index.html">Drop-down list</a></h2>
+		<img src="images/ddl.png" alt="Drop-down list"/>
+		<p>This enhancement the drop-down list will show out when the user clicks on the “Product”. To achieve 
+		this the team function to change the list class to “show”. </p>
+
+
+
+
+
+
+
+</article>
+	<!--Footer-->
+	<footer class="footer">
+		<address class="group">
+			<p>
+			<a href="aboutgroup.html">Developer</a></p>
+			<p>
+			Last Update:
+			</p>
+		</address>
+
+		<section class="fcontact0">
+			<p>Contact Number: <a href="tel:555-6666-555">555-6666-555</a></p>
+			<p>E-mail: <a href="mailto:group1@gmail.com">group1@gmail.com</a></p>
+		</section>
+
+		<section class="fcontact1">
+			<p>
+			<a href="https://www.facebook.com/"><img src="images/fb.png" alt="facebook logo" class="fblogo"/></a>
+			<a href="https://twitter.com/login?lang=en"><img src="images/twitter.png" alt="twitter logo" class="twitterlogo"/></a>
+			<a href="https://www.instagram.com/"><img src="images/instagram.png" alt="instagram logo" class="instagramlogo"/></a>
+			</p>
+		</section>
+		<nav class="submenu">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="disclaimer.html">Disclaimer</a></li>
+				<li><a href="about.html">about</a></li>
+				<li><a href="Feedback.html">Feedback</a></li>
+				<li><a href="enhancements.html">Enhancements</a></li>
+			</ul>
+		</nav>
+	</footer>
+</body>
+</html>

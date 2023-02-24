@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<title>Feedback</title>
+	
+		<meta charset="utf-8"/>
+		<meta name="author" content=""/>
+		<meta name="description" content=""/>
+		<meta name="Keyword" content=""/>
+		<link href="style/style.css" type="text/css" rel="stylesheet"/>
+		<script src="script/enhancement.js"></script>
+</head>
+<body>
+<header>
+			<div class="logo">
+			<p><img src="images/logo.png" alt="Logo"/></p>
+			</div>
+
+		<!--menu-->
+		<nav id="menu">
+			<label  for="burger">&#9776;</label>
+			<input type="checkbox" id="burger"/>
+			<div id="nav1">
+			<ul>
+				<li class="menuli"><a href="index.html">Home</a></li>
+				<li class="menuli"><a onclick="dropdownMenu()" class="dropbtn" >Product</a>
+				 <ul id="myDropdown" class="dropdown-menu">
+						<li><a href="city.html">City</a></li>
+						<li><a href="jungle.html">Forest</a></li>
+						<li><a href="sea.html">Sea</a></li>
+						<li><a href="homestay.html">Homestay</a></li>
+				</ul>
+				</li>
+				<li class="menuli"><a href="Enquiry.html" onclick="noroom()">Booking</a></li>
+				<li class="menuli"><a href="about.html">About us</a></li>
+				<li class="menuli"><a href="Feedback.html">Feedback</a></li>
+			</ul>
+		</div></nav>
+</header>
+
+<article class="feedback">
+    
+<form name="feedback" id="fbform" method="post" action="" enctype="text/plain">
+    
+<fieldset>
+    
+<legend>Feedback Form</legend>
+    
+<div class="feedbackdiv">
+<table>
+
+<tr id="ugname">
+<td><label for="First_name">Name: </label></td>
+<td><input id="First_name" type="text" name="name" placeholder="Enter your Given Name" size="25" onkeypress="return limitinput(this, event, alphaOnly);" onkeydown="limit(this,25);" onkeyup="limit(this,25);"  /><br/>
+<span id="gname_e"></span></td>
+</tr>
+
+<tr id="uemail">
+<td><label for="Email">Email Address:</label></td>
+<td><input type="text" name="email"  id="Email" placeholder="Ex: myname@exmaple.com" size="30" /><br/>
+<span id="uemail_e"></span></td>
+</tr>
+
+<tr>
+
+<tr id="fbss">
+<td><label for="State">Category: </label></td>
+<td><select name="Category" id="Category" onload="fbddl()"></select><br/>
+<span id="category_e" ></span></td>
+</tr>
+<!-- <td><label for="Category">Category: </label></td>
+<td><select name="Category">
+    <option value="Compilment">Compliment</option>
+    <option value="Suggestion">Suggestion</option>
+    <option value="Question">Question</option>
+    </select>
+</td> -->
+</tr>
+    
+<tr id="feedbcom">
+<td><label for="message">Your Feedback: </label></td>
+<td><textarea id="fbcom" name="message" placeholder="Your Suggestion to Improve The Website" rows="10" cols="40"></textarea>
+<br/><span id="command_e"></span></td>
+</tr>
+
+</table>
+<p>*Make sure you have filled all information before you submit it!*</p>
+<p class="submit"><input type="reset" value="Reset All" onclick="noroom()"/></p>
+<p class="reset"><input class="buttonfeedback" type="submit" value="Submit" onclick="return feedbakcvalit()"/></p>
+
+
+</div>
+</fieldset>
+</form>
+</article>
+
+	<!--Footer-->
+	<footer class="footer">
+		<address class="group">
+			<p>
+			<a href="aboutgroup.html">Developer</a></p>
+			<p>
+			Last Update:
+			</p>
+		</address>
+
+		<section class="fcontact0">
+			<p>Contact Number: <a href="tel:555-6666-555">555-6666-555</a></p>
+			<p>E-mail: <a href="mailto:group1@gmail.com">group1@gmail.com</a></p>
+		</section>
+
+		<section class="fcontact1">
+			<p>
+			<a href="https://www.facebook.com/"><img src="images/fb.png" alt="facebook logo" class="fblogo"/></a>
+			<a href="https://twitter.com/login?lang=en"><img src="images/twitter.png" alt="twitter logo" class="twitterlogo"/></a>
+			<a href="https://www.instagram.com/"><img src="images/instagram.png" alt="instagram logo" class="instagramlogo"/></a>
+			</p>
+		</section>
+		<nav class="submenu">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="disclaimer.html">Disclaimer</a></li>
+				<li><a href="about.html">about</a></li>
+				<li><a href="Feedback.html">Feedback</a></li>
+				<li><a href="enhancements.html">Enhancements</a></li>
+			</ul>
+		</nav>
+	</footer>
+	<script src="script/jvs.js"></script>
+</body>
+</html>

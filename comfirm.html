@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+			<title>Enquiry</title>
+	
+		<meta charset="utf-8"/>
+		<meta name="author" content=""/>
+		<meta name="description" content=""/>
+		<meta name="Keyword" content=""/>
+		<link href="style/style.css" type="text/css" rel="stylesheet"/>
+		<script src="script/enhancement.js"></script>
+</head>
+<body id="comfirm">
+<header>
+			<div class="logo">
+			<p><img src="images/logo.png" alt="Logo"/></p>
+			</div>
+
+		<!--menu-->
+		<nav id="menu">
+			<label  for="burger">&#9776;</label>
+			<input type="checkbox" id="burger"/>
+			<div id="nav1">
+			<ul>
+				<li class="menuli"><a href="index.html">Home</a></li>
+				<li class="menuli"><a onclick="dropdownMenu()" class="dropbtn" >Product</a>
+				 <ul id="myDropdown" class="dropdown-menu">
+						<li><a href="city.html">City</a></li>
+						<li><a href="jungle.html">Forest</a></li>
+						<li><a href="sea.html">Sea</a></li>
+						<li><a href="homestay.html">Homestay</a></li>
+				</ul>
+				</li>
+				<li class="menuli"><a href="Enquiry.html" onclick="noroom()">Booking</a></li>
+				<li class="menuli"><a href="about.html">About us</a></li>
+				<li class="menuli"><a href="Feedback.html">Feedback</a></li>
+			</ul>
+		</div></nav>
+</header>
+<article>
+   
+	<form id="bookconfrim" action="index.html" onload="return Booking_D()">
+		<fieldset>
+			<legend>Details</legend>
+			<p> Name		  : <span id="confirm_name"></span></p>
+			<p> Email		  : <span id="confirm_email"></span></p>
+			<p> Street Address:	<span id="confirm_SA"></span></p>
+			<p> City		  : <span id="confirm_city"></span></p>
+			<p> State		  : <span id="confirm_state"></span></p>
+			<p> Postcode	  : <span id="confirm_Postcode"></span></p>
+			<p> Phone Number  :	<span id="confirm_hp"></span></p>
+			<p>	Room		  : <span id="confirm_room"></span></p>
+			<p>	Duration	  :	<span id="confirm_dur"></span></p>
+			<p>	Comments	  :	<span id="confirm_com"></span></p>
+			
+			<p class="submit"><input type="button" value="Cancel" id="cancelButton" onclick="cBooking()"/></p>
+			<p class="submit"><input type="submit" value="Confirm Booking" id="comButton" onclick="validate()"/></p>
+		</fieldset>
+	
+	</form>
+
+</article>
+
+	<!--Footer-->
+	<footer class="footer">
+		<address class="group">
+			<p>
+			<a href="aboutgroup.html">Developer</a></p>
+			<p>
+			Last Update:
+			</p>
+		</address>
+
+		<section class="fcontact0">
+			<p>Contact Number: <a href="tel:555-6666-555">555-6666-555</a></p>
+			<p>E-mail: <a href="mailto:group1@gmail.com">group1@gmail.com</a></p>
+		</section>
+
+		<section class="fcontact1">
+			<p>
+			<a href="https://www.facebook.com/"><img src="images/fb.png" alt="facebook logo" class="fblogo"/></a>
+			<a href="https://twitter.com/login?lang=en"><img src="images/twitter.png" alt="twitter logo" class="twitterlogo"/></a>
+			<a href="https://www.instagram.com/"><img src="images/instagram.png" alt="instagram logo" class="instagramlogo"/></a>
+			</p>
+		</section>
+		<nav class="submenu">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="disclaimer.html">Disclaimer</a></li>
+				<li><a href="about.html">about</a></li>
+				<li><a href="Feedback.html">Feedback</a></li>
+				<li><a href="enhancements.html">Enhancements</a></li>
+			</ul>
+		</nav>
+	</footer>
+<script src="script/jvs.js"></script>
+</body>
+</html>
